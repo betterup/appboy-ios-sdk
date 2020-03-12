@@ -33,21 +33,21 @@ Pod::Spec.new do |s|
 
   s.subspec 'NewsFeed' do |snf|
     snf.source_files = 'AppboyUI/ABKNewsFeed/*.*', 'AppboyUI/ABKNewsFeed/ViewControllers/**/*.*', 'AppboyUI/ABKUIUtils/**/*.*', 'AppboyKit/ABKSDWebImageProxy.m'
-    snf.resources = ['AppboyUI/ABKNewsFeed/Resources/*.*', 'AppboyUI/ABKNewsFeed/Resources/images/*.*']
+    snf.resource = 'AppboyUI/ABKNewsFeed/Resources/**/*'
     snf.dependency 'Appboy-iOS-SDK/Core'
     snf.dependency 'SDWebImage', '~>5.0'
   end
 
   s.subspec 'InAppMessage' do |siam|
     siam.source_files = 'AppboyUI/ABKUIUtils/**/*.*', 'AppboyUI/ABKInAppMessage/*.*', 'AppboyUI/ABKInAppMessage/ViewControllers/*.*', 'AppboyKit/ABKSDWebImageProxy.m'
-    siam.resource = 'AppboyUI/ABKInAppMessage/Resources/*.*'
+    siam.resource = 'AppboyUI/ABKInAppMessage/Resources/*'
     siam.dependency 'Appboy-iOS-SDK/Core'
     siam.dependency 'SDWebImage', '~>5.0'
   end
 
   s.subspec 'ContentCards' do |scc|
     scc.source_files = 'AppboyUI/ABKContentCards/*.*', 'AppboyUI/ABKContentCards/ViewControllers/**/*.*', 'AppboyUI/ABKUIUtils/**/*.*', 'AppboyKit/ABKSDWebImageProxy.m'
-    scc.resource = 'AppboyUI/ABKContentCards/Resources/*.*'
+    scc.resource = 'AppboyUI/ABKContentCards/Resources/**/*'
     scc.dependency 'Appboy-iOS-SDK/Core'
     scc.dependency 'SDWebImage', '~>5.0'
   end
